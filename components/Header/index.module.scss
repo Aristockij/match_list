@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 42px 42px 20px 42px;
+}
+.right {
+  display: flex;
+  gap: 12px;
+}
+
+.refresh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $red;
+  width: 204px;
+  height: 56px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+
+  span {
+    margin-right: 10px;
+  }
+}
+
+.error {
+  background-color: $bg-color;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.loading {
+  animation-name: isLoading;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+
+@keyframes isLoading {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: -360deg;
+  }
+}
