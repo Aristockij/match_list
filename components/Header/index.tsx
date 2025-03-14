@@ -3,7 +3,7 @@
 import s from "./index.module.scss";
 import { useGetMatch } from "@/hooks/useGetMatch";
 
-const index = () => {
+const Index = () => {
   const { isError, isFetching, refetch } = useGetMatch();
 
   return (
@@ -31,4 +31,4 @@ const index = () => {
     </header>
   );
 };
-export default index;
+export default Index;
